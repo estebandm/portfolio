@@ -11,3 +11,70 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root{
+  --dark: #282c34;
+  --lightBlue: #61dafb;
+}
+
+.app{
+  background-color: #90a4ae;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container{
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.container--marginTop{
+  margin-top: 4rem;
+}
+
+.arrowDown{
+  position: absolute;
+  bottom: -5%;
+  margin-bottom: 50px;
+}
+
+.skillsTrack {
+  display: flex;
+  padding: 2rem 0;
+  height: 250px;
+  width: 200%;
+  position: absolute;
+  animation: scrolling 20s linear infinite; 
+}
+
+@keyframes scrolling {
+  0% { left: 0; }
+  100% { left: -240%; }
+}
+
+.skillsTrack:hover {
+  animation-play-state: paused;
+}
+
+.span{
+  display: flex;
+}
+
+.skillsSlide{
+    width: 180px;
+    height: 100px;
+}
+
+/* .sliderTransition{
+  animation: sliderProject 5s
+}
+
+@keyframes sliderProject{
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+} */

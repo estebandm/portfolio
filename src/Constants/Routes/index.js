@@ -1,0 +1,5 @@
+export const HOME = '/home'
+export const ABOUT_ME = '/about me'
+export const SKILLS = '/skills'
+export const PROJECTS = '/projects'
+export const CONTACT = '/contact'
