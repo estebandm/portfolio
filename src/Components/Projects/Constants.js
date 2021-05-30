@@ -1,7 +1,9 @@
-import ListUsersPng from 'assets/images/projects/list-users.png'
-import ListPokemonsPng from 'assets/images/projects/poke-api.png'
-import ListHeros from 'assets/images/projects/list-heros.png'
-import ToDoList from 'assets/images/projects/to-do-list.png'
+import ListUsersPng from 'assets/images/projects/list-users-min.jpg'
+import ListPokemonsPng from 'assets/images/projects/poke-api-min.jpg'
+import ListHeros from 'assets/images/projects/list-heros-min.jpg'
+import ToDoList from 'assets/images/projects/to-do-list-min.jpg'
+import Movies from 'assets/images/projects/movies-min.jpg'
+import RickAndMorty from 'assets/images/projects/rick-and-morty-min.jpg'
 
 export const tutorialSteps = [
   {
@@ -31,5 +33,19 @@ export const tutorialSteps = [
     imgPath: ToDoList,
     gitHub: 'https://github.com/estebandm/todo-list.git',
     live: 'https://to-do-list-45ecb.web.app'
+  },
+  {
+    title: 'Películas',  
+    description: 'App hecha en nextjs que muestra películas paginadas de a 20, también cuenta con filtros de búsqueda',
+    imgPath: Movies,
+    gitHub: 'https://github.com/estebandm/movies',
+    live: 'https://tevix-pedia.vercel.app'
+  },
+  {
+    title: 'Rick and Morty',  
+    description: 'App que lista todos los personajes de rick and morty con infinite scroll, también cuenta con dark mode',
+    imgPath: RickAndMorty,
+    gitHub: 'https://github.com/estebandm/rink-and-morty',
+    live: 'https://rick-and-morty-67c08.web.app/'
   }
 ];
