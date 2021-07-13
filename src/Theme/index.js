@@ -1,18 +1,23 @@
 import { createMuiTheme } from '@material-ui/core/styles'
-import blueGrey from '@material-ui/core/colors/blueGrey';
-
 
 const theme = createMuiTheme({
     palette: {
         primary: {
-            main: blueGrey[500],
-            light: blueGrey[50]
+            dark: '#121f3d',
+            main: '#24385b',
+            light: '#33b1ff', 
+            /* main: blueGrey[500],
+            light: blueGrey[50], */
+            white: '#ffffff'
         },
         secondary: {
             main: '#f6685e'
         }
     },
     overrides: {
+        textShadow:{
+            small: '1px 1px 1px'
+        },
         MuiCssBaseline: {
             "@global": {
                 "*::-webkit-scrollbar": {

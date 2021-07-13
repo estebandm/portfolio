@@ -15,10 +15,12 @@ code {
 :root{
   --dark: #282c34;
   --lightBlue: #61dafb;
+  --white: #ffffff;
+  --main: #24385b;
 }
 
 .app{
-  background-color: #90a4ae;
+  background-color: var(--main);
   height: 100vh;
   overflow: hidden;
 }

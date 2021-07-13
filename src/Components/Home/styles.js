@@ -1,10 +1,10 @@
 import withStyles from '@material-ui/core/styles/withStyles'
 import MuiTypography from '@material-ui/core/Typography'
 
-export const Typography = withStyles(( { palette, breakpoints }) => ({
+export const Typography = withStyles(( { palette, overrides, breakpoints }) => ({
     h3:{
-        color: palette.primary.light,
-        textShadow: `2px 1px 4px ${palette.primary.main}`,
+        color: `${palette.primary.white}`,
+        textShadow: `${overrides.textShadow.small} ${palette.primary.dark}`,
         [breakpoints.down('sm')]: {
             fontSize: '2.5rem'
         },    
@@ -13,8 +13,8 @@ export const Typography = withStyles(( { palette, breakpoints }) => ({
         }
     },
     h4: {
-        color: palette.primary.light,
-        textShadow: `2px 1px 4px ${palette.primary.main}`,
+        color: `${palette.primary.white}`,
+        textShadow: `${overrides.textShadow.small} ${palette.primary.dark}`,
         marginTop: '3rem',
         [breakpoints.down('sm')]: {
             fontSize: '1.6rem',
@@ -26,8 +26,8 @@ export const Typography = withStyles(( { palette, breakpoints }) => ({
         }
     },
     h2: {        
-        color: 'white',
-        textShadow: `1px 1px 14px ${palette.secondary.main}`,
+        color: `${palette.primary.white}`,
+        textShadow: `${overrides.textShadow.small} ${palette.secondary.dark}`,
         [breakpoints.down('sm')]: {
             fontSize: '2.5rem'
         },           

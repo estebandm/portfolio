@@ -6,7 +6,8 @@ import MuiTypography from '@material-ui/core/Typography'
 export const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
-    border: '5px solid rgb(67, 87, 97)',
+    border: `5px solid ${theme.palette.primary.dark}`,
+    borderRadius: '3px',
     marginTop: '8rem',
     '& .MuiMobileStepper-root':{
         backgroundColor: theme.palette.primary.dark,
@@ -84,7 +85,7 @@ export const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export const Typography = withStyles(({ palette, breakpoints }) => ({
+export const Typography = withStyles(({ palette,overrides, breakpoints }) => ({
     body1:{
         '&:hover, &:link, &:focus, &:visited, &:active' :{
             color: 'black',
@@ -101,8 +102,8 @@ export const Typography = withStyles(({ palette, breakpoints }) => ({
         }
     },
     h4: {
-        color: palette.primary.light,
-        textShadow: `2px 1px 4px ${palette.primary.main}`,
+        color: palette.primary.white,
+        textShadow: `${overrides.textShadow.small} ${palette.primary.dark}`,
         [breakpoints.down('sm')]: {
             fontSize: '1.6rem'
         },    

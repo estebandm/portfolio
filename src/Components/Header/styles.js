@@ -13,6 +13,7 @@ export const useStyles = makeStyles((theme) => ({
         right: theme.spacing(2),
     },
     header:{
+        backgroundColor: `${theme.palette.primary.dark}`,
         display: 'flex',
         justifyContent: 'space-around',
         alignItems: 'center',

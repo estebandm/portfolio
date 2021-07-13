@@ -2,10 +2,10 @@ import withStyles from '@material-ui/core/styles/withStyles'
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import MuiTypography from '@material-ui/core/Typography'
 
-export const Typography = withStyles(({ palette, breakpoints }) => ({
+export const Typography = withStyles(({ palette, overrides, breakpoints }) => ({
     h4: {
-        color: palette.primary.light,
-        textShadow: `2px 1px 4px ${palette.primary.main}`,
+        color: palette.primary.white,
+        textShadow: `${overrides.textShadow.small} ${palette.primary.dark}`,
         [breakpoints.down('sm')]: {
             fontSize: '1.6rem'
         },    

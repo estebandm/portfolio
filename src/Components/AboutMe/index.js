@@ -30,7 +30,10 @@ export const AboutMe = () => {
                     He trabajado como autodidácta en  pequeños y medianos proyectos, con tecnologías como HTML5, reactjs, y firebase.                
                 </Typography>
                 <Typography variant='h4'>
-                    Recientemente tuve la grata oportunidad de trabajar y contribuir en un proyecto en el ámbito real sobre una aplicación de blockchain.
+                    Tuve la grata oportunidad de trabajar y contribuir en una aplicación de blockchain.                    
+                </Typography>
+                <Typography variant='h4'>
+                    Actualmente me encuentro trabajando como desarrollador web front-end en Bambú Estudio Soft, Paraná Entre Ríos.
                 </Typography>
             </div>            
             <Developer width={width} height={height}/>                
